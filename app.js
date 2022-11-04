@@ -16,10 +16,13 @@ console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-
+    const vowels = ['a', 'e', 'i', 'o', 'u',]
+    let check = vowels.includes(letter)
+    return check
 }
 
 console.log(`\n 3. isAVowel`);
+console.log(isAVowel('e'))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
