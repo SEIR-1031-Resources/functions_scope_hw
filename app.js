@@ -1,8 +1,17 @@
 // 1.1. What is the difference between a parameter and an argument?
+    // a parameter is a function's local placeholder variable through which an argument is passed; 
+    // and argument is the data that gets pushed into a function's parameter
+    
+    // it's like a caterpiller (argument) goes through the cocoon (parameter) to become the butterfly (result of the function)
 
 // 1.2. Within a function, what is the difference between return and console.log?
-
+    // return sends data out to whatever method invoked the function
+    // console.log only writes it in the console -- doesn't store the info anywhere
+    
 // 1. 3. What are the implications of the ability of a function to return a value?
+    // can store the data a function has transformed into a variable
+    // and then you can do more things to/with that data
+    // a la multiple functions manipulating data amongst themselves
 
 // 2. calculateCube
 function calculateCube(num) {
