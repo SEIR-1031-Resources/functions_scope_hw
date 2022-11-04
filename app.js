@@ -12,9 +12,10 @@
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
-    
+    let volume = num * num * num
+    return volume
 }
-
+console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
