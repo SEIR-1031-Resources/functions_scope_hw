@@ -7,37 +7,104 @@
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
+    return num * num * num 
 }
+
+console.log(calculateCube(5));
+
 
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    if (letter = "a") {
+        return true 
+    } else if ( letter = "e") { 
+        return true 
+    } else if ( letter = "i") {
+        return true 
+    } else if ( letter = "o") {
+        return true 
+    } else if ( letter = "u") {
+        return true 
+    } else { 
+        return false 
+    }
 }
+
+console.log(isAVowel("a"));
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    function getTwoLengths(word1, word2) {
+        // YOUR CODE HERE
+        return [word1.length, word2.length] 
+    
+    }
+    
+    console.log(getTwoLengths("Hank", "Hippopopalous"));
 }
 
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
+    function sumArray(array) {
+
+        let sum = 0 
+        
+        for ( let i = 0; i < array.length; i++) {
+             sum += array[i];
+        }
+        return sum
+        }
+        
+        console.log(sumArray([1, 2, 3, 4, 5, 6]));
 }
 
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    if (num < 2) return false;
+    
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) 
+            return false;
+        
+    }
+    return true;
 }
+
 
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
-}
+        let newArr = [];
+        for (let i = 0; i < num; i++) {
+            if (checkPrime(i)) {
+                newArr.push(i);
+            }
+        }
+        return newArr;
+    }
+    
+    console.log(printPrimes(97))
+
 
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
-}
+    let word = "";
+    for (let i = 0; i < arr.length; i++) {
+      if (word.length < arr[i].length) {
+        word = arr[i];
+      }
+    }
+    return word;
+  }
+  
+  console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
 
 // BONUS!
 
