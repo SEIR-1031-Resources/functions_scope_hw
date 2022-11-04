@@ -9,13 +9,27 @@ function calculateCube(num) {
     // YOUR CODE HERE
     return num ** 3
 }
-console.log(calculateCube(5))
+//console.log(calculateCube(5))
 
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    let letter2 = letter.toLowerCase();
+    if (letter2 === 'a'){
+        return true
+    }else if (letter2 === 'e'){
+        return true
+    }else if (letter2 === 'i'){
+        return true 
+    }else if (letter2 === 'o'){
+        return true 
+    }else if (letter2 === 'u'){
+        return true
+    }else {
+        return false
+    }
 }
-
+console.log(isAVowel('I'))
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
