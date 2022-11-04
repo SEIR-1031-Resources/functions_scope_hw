@@ -1,18 +1,29 @@
 // 1.1. What is the difference between a parameter and an argument?
-
+// A paramter serves as a placeholder; the argument is the value the parameter assumes.
 // 1.2. Within a function, what is the difference between return and console.log?
-
+// return returns the value of the function; console.log logs a value to the console.
 // 1. 3. What are the implications of the ability of a function to return a value?
+// We can hold functions in variables.
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return num ** 3;
 }
+
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    if (vowels.indexOf(letter) === -1) return false;
+    return true;
 }
+
+console.log(isAVowel('a'));
+console.log(isAVowel('e'));
+console.log(isAVowel('i'));
+console.log(isAVowel('o'));
+console.log(isAVowel('u'));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
