@@ -7,7 +7,9 @@
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
+    return num ** 3
 }
+console.log(calculateCube(5))
 
 // 3. isAVowel
 function isAVowel(letter) {
