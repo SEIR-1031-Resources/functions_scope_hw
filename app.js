@@ -56,7 +56,15 @@ function printPrimes(num) {
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    winnerIndex = 0;
+    for (let i in arr) {
+    if (arr[i].length === winnerIndex) {
+        continue 
+    }
+        else if (arr[i].length > winnerIndex) {
+        winnerIndex = i
+    } 
+    } return arr[winnerIndex]
 }
 
 // BONUS!
