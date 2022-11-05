@@ -104,7 +104,28 @@ function eulerFibo(num) {
     return str;
 }
 
-console.log(eulerFibo(317811))
+function eulerFiboEven(num) {
+    let num1 = 0;
+    let num2 = 1;
+    let sum;
+    let numArray = [];
+
+    for (let i = 1; i <= num; i++) {
+        if (num1 + num2 > num) {
+            return numArray;
+        }
+
+        sum = num1 + num2;
+        num1 = num2;
+        num2 = sum;
+
+        if (sum % 2 === 0) numArray.push(sum);
+    }
+
+    return numArray;
+}
+
+console.log(eulerFiboEven(317811));
 
 // 9. findNeedle
 function findNeedle(arr) {
