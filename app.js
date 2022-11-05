@@ -148,13 +148,13 @@ function sumPositive(arr) {
     let sum = 0;
 
     for (i = 0; i < arr.length; i++){
-        if (arr[i] % 2 === 0) sum += arr[i];
+        if (arr[i] > 0) sum += arr[i];
     }
 
     return sum;
 }
 
-console.log(sumPositive([2, 4, 6, 9, 12, 6, 20, 11, 33, 19, 13]));
+console.log(sumPositive([5, -2, 1, 2, -3, 4, -2]));
 
 /* module.exports = {
     calculateCube,
