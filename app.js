@@ -56,9 +56,16 @@ function isAVowel(letter) {
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
+    
     // YOUR CODE HERE
+    let word_length = []
+    word_length.push(word1.length)
+    console.log(word_length)
+    word_length.push(word2.length)
+    console.log(word_length)
+    return word_length
 }
-
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
