@@ -6,7 +6,11 @@
 // We can hold functions in variables.
 
 // 2. calculateCube
+function calculateCube(num) {
+	return num ** 3;
+}
 
+console.log(`Problem 2:\n${calculateCube(5)}`);
 
 // 3. isAVowel
 
@@ -45,15 +49,15 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
+// module.exports = {
+//     calculateCube,
+//     isAVowel,
+//     getTwoLengths,
+//     sumArray,
+//     checkPrime,
+//     printPrimes,
+//     printLongestWord,
+//     eulerFibo,
+//     findNeedle,
+//     sumPositive
+// };
