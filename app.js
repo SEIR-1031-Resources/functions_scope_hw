@@ -45,14 +45,27 @@ function sumArray(arr) {
 }
 
 // 6.1 checkPrime
-function checkPrime(num) {
-    // YOUR CODE HERE
-}
+function checkPrime (num) {
+    let sqrt= Math.floor(Math.sqrt(num))
+    let divisibles = []
+      for (let i=0; i<=sqrt; i++) {
+        if (num % i === 0) {
+        divisibles.push(i)
+        }
+    } if (divisibles.length > 1) {
+        return false
+      } else {return true}
+    }
 
 // 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
-}
+
+function printPrimes (num) {
+    for (let i=0; i <= num ; i++) {
+        if (checkPrime(i)) {
+        console.log(i)
+        }
+    }
+    }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
