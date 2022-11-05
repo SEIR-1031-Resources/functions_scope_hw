@@ -20,7 +20,10 @@ function calculateCube(num) {
 }
 
 // 3. isAVowel
-
+function isAVowel(letter) {
+    let vowels = ['a', 'e', 'i','o', 'u'];
+    console.log(vowels.includes(letter.toLowerCase()));
+}
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
