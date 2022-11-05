@@ -11,7 +11,13 @@ function calculateCube(num) {
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    if (c.length != 1) return 'Be smarter'
+
+    let uc = c.toUpperCase()
+
+    const vowelCheck = uc === "A" || uc === "E" || uc === "I" || uc === "O" || uc === "U"
+
+    return vowelCheck
 }
 
 // 4. getTwoLengths
