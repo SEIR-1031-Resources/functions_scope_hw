@@ -22,7 +22,7 @@ console.log(calculateCube(5));
 function isAVowel(letter) {
     const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
     
-    for(i =0; i < vowels.length; i++){
+    for(let i =0; i < vowels.length; i++){
         if(letter == vowels[i]){
             return true;
         }
@@ -33,12 +33,15 @@ console.log(isAVowel("b"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    
+    array = [word1.length, word2.length];
+    return (array); 
 }
+console.log(getTwoLengths("Hank", "Hippopopalous" ));
+
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    
 }
 
 // 6.1 checkPrime
