@@ -72,7 +72,7 @@ console.log(checkPrime([58]))
 // couldnt figure out how to call the function above in and make this work... 
 
 function printPrimes(num) {
-    for(let listOfNums = 1; listOfNums <=95; listOfNums++){
+    for(let listOfNums = 1; listOfNums <= num; listOfNums++){
         let evenNums = false;
     for (let i = 2; i <= num; i++) {
         if (listOfNums % i === 0){
