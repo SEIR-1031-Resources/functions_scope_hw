@@ -6,7 +6,7 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return num ** 2
 }
 
 // 3. isAVowel
