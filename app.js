@@ -20,18 +20,21 @@
 
 
 // 3. isAVowel
-function isAVowel(letter){
-    let vowels = ['a', 'e', 'i', 'o', 'u']
-    if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter ==='u'){
-        return true
-        } else {return false}
-    }
-console.log(isAVowel('a'));
+// function isAVowel(letter){
+//     let vowels = ['a', 'e', 'i', 'o', 'u']
+//     if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter ==='u'){
+//         return true
+//         } else {return false}
+//     }
+// console.log(isAVowel('a'));
 
-// // 4. getTwoLengths
-// function getTwoLengths(word1, word2) {
-//     // YOUR CODE HERE
-// }
+// 4. getTwoLengths
+function getTwoLengths(word1, word2) {
+    let length1 = word1.length;
+    let length2 = word2.length;
+    return [length1, length2]
+}
+console.log(getTwoLengths("Hank", "Hippopopalous"))
 
 // // 5. sumArray
 // function sumArray(arr) {
