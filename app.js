@@ -27,7 +27,7 @@ function isAVowel(letter) {
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    return [word1.length, word2.length];
 }
 
 // 5. sumArray
