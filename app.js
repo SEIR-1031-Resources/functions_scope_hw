@@ -38,7 +38,10 @@ function getTwoLengths(word1, word2) {
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let result = 0
+    for (i in arr) {
+      result += arr[i]
+    } return result
 }
 
 // 6.1 checkPrime
