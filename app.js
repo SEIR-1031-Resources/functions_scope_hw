@@ -3,7 +3,7 @@
 // 1.2. Within a function, what is the difference between return and console.log?
 // Return will return what is defined and end the execution of a function. Console.log will print the value within the terminal or browser console.
 // 1. 3. What are the implications of the ability of a function to return a value?
-// Return will exit the function and return the specified results
+// Return will exit the function and return the specified/defined results
 
 // 2. calculateCube
 function calculateCube(num) {
