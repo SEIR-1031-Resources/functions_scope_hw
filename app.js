@@ -13,7 +13,18 @@ function calculateCube(num) {
 console.log(`Problem 2:\n${calculateCube(5)}`);
 
 // 3. isAVowel
-
+function isAVowel(letter) {
+	let vowels = ['a', 'e', 'i', 'o', 'u'];
+	if (vowels.indexOf(letter) === -1) return false;
+	return true;
+}
+console.log('Problem 3:')
+console.log(isAVowel('a'));
+console.log(isAVowel('e'));
+console.log(isAVowel('i'));
+console.log(isAVowel('o'));
+console.log(isAVowel('u'));
+console.log(isAVowel('g'))
 
 // 4. getTwoLengths
 
