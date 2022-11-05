@@ -59,8 +59,7 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 // This function can **call on** the previous `checkPrime` function.
 // </details>
 function checkPrime(num) {
-    let sqRoot = Math.sqrt(num)
-    for (let i = 2; i <= sqRoot; i++) {
+    for (let i = 2; i <= num; i++) {
         if (num % i === 0){
             return false;
         };
@@ -69,36 +68,51 @@ function checkPrime(num) {
 
 };
 console.log(checkPrime([58]))
-// 6.2 printPrimes
-function printPrimes(num) {
-    let prntPrime= null
-    for(let i = 3; i < num; i+=2) {
-        if(checkPrime(i) ){
-            prntPrime(i)
-        }
-    }
+//6.2 printPrimes
+// couldnt figure out how to call the function above in and make this work... 
 
+function printPrimes(num) {
+    for(let listOfNums = 1; listOfNums <=95; listOfNums++){
+        let evenNums = false;
+    for (let i = 2; i <= num; i++) {
+        if (listOfNums % i === 0){
+            evenNums = true
+        }if(evenNums === false){
+            console.log(listOfNums)
+        };
+
+    };
+};
 }
-console.log(printPrimes(95));
+printPrimes(95);
 // 7. printLongestWord *****
 // Write a function `printLongestWord` that accepts a single argument, an **array of strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
 // ```javascript
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
-// so i want to write a for loop, that takes each element and tests it against the other elements to check the length of the word, then an if statement to check if the condition for the current index is greater than i, to continue running. once the i is greater than all of the other elements in the array, return.
-//
+// so i need to test the length of each element in a string against one another and to find which has the greatest length
+//I need a for loop
+//I need a variable to compare against for the condition. 
+//I need a variable to represent each interation of the array to compare against the first variable
+//.... oh i need a results variable
+
 
 function printLongestWord(arr) {
-   let word = '';
-    for(let i = 0; i < newArr.length; i++){
-       if( newArr[i].length > word){
-           word = newArr[i];
-    };
-   };
-   return word;
-};
-
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+    let str = arr[0].length
+    
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length >= str){
+            str = arr[i].length
+            longestWord = arr[i]
+        }else if(arr[i].length === str){
+            arr.find(element => {
+                return element < arr[i]
+            });
+        }
+    }
+    return longestWord;
+}
+console.log(printLongestWord(["BoJack", "Princess","asdfkfjghfjd ", "Diane", "a", "Max", "Peanutbutter", "big", "blob",]))
 
 // BONUS!
 
