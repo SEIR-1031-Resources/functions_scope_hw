@@ -44,8 +44,14 @@ getTwoLengths('hiqweqwe','helloqwew')
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++){
+         sum += arr[i]    
+    }
+    return sum
 }
 
+console.log(sumArray([10,15,10]))
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
