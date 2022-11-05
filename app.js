@@ -11,7 +11,8 @@
 // 1. 3. What are the implications of the ability of a function to return a value?
     A function will take input and/or perform a procedure to determine the relationship between the arguments
     and/or perform a specific procedure and output the desired result.  Functions can be called numerous times 
-    throughout your code without the need to write the same procedure over and over.
+    throughout your code without the need to write the same procedure over and over.  When return is used 
+    within a function the function is stopped and the result is provided to where it is called in the code.
 */
 
 // 2. calculateCube
@@ -43,13 +44,41 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num === 1) {
+        return false;
+    } else if (num > 0) {
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+    } else {
+        return false;
+    }
+
+    return true;
 }
+console.log(checkPrime(2)); // true
+console.log(checkPrime(1)); // false
+console.log(checkPrime(-5)); // false
+console.log(checkPrime(22)); // false
+console.log(checkPrime(27)); // false
+console.log(checkPrime(21)); // false
+console.log(checkPrime(200)); // false
+console.log(checkPrime(2199)); // false
+console.log(checkPrime(47)); // true
+console.log(checkPrime(43)); // true
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for (i = 2; i <= num; i++) {
+        if (checkPrime(i)) {
+            console.log(i);
+        }
+    }
 }
+
+printPrimes(101);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
