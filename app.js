@@ -125,7 +125,17 @@ function eulerFiboEven(num) {
     return numArray;
 }
 
-console.log(eulerFiboEven(317811));
+function eulerSum (arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+console.log(eulerSum(eulerFiboEven(317811)));
 
 // 9. findNeedle
 function findNeedle(arr) {
