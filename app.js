@@ -116,8 +116,15 @@ findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'hi', 'randomJunk', 'needle
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
+    let positive = 0;
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i] > 0){
+            positive += parseInt(arr[i]);
+        }
+    }
+    console.log(positive)
 }
-
+sumPositive(['1', '4', '8','-3', '-5', '7'])
 module.exports = {
     calculateCube,
     isAVowel,
