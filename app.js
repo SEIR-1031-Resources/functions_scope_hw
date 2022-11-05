@@ -74,15 +74,16 @@ function printPrimes(num) {
   }
   return primeNumbers
 }
+
 console.log(`\n 6 checkPrime`);
 console.log(checkPrime(11))
-printPrimes(11)
 console.log(printPrimes(11))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
 }
+
 
 // BONUS!
 
