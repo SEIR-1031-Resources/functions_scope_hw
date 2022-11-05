@@ -29,7 +29,7 @@ console.log(isAVowel('a'))
 function getTwoLengths(word1, word2) {
    
    return [word1.length, word2.length]
-}
+};
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 //Write a function `sumArray` that takes an **array** as an argument.
@@ -47,7 +47,7 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 
-// 6.1 checkPrime
+// 6.1 checkPrime ****
 //A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, [go here](https://en.wikipedia.org/wiki/Prime_number).
 //To test whether a number is Prime, you only need to test as far as the **square root** of that number. This is advisable for optimization and testing large numbers.
 // ### Step One
@@ -59,21 +59,46 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 // This function can **call on** the previous `checkPrime` function.
 // </details>
 function checkPrime(num) {
-    for (let i =2; i<= Math.sqrt(num); i++) {
+    let sqRoot = Math.sqrt(num)
+    for (let i = 2; i <= sqRoot; i++) {
         if (num % i === 0){
             return false;
-    };
-}; 
+        };
+
+    }; return true;
+
 };
+console.log(checkPrime([58]))
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
-}
+    let prntPrime= null
+    for(let i = 3; i < num; i+=2) {
+        if(checkPrime(i) ){
+            prntPrime(i)
+        }
+    }
 
-// 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
 }
+console.log(printPrimes(95));
+// 7. printLongestWord *****
+// Write a function `printLongestWord` that accepts a single argument, an **array of strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// ```javascript
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// so i want to write a for loop, that takes each element and tests it against the other elements to check the length of the word, then an if statement to check if the condition for the current index is greater than i, to continue running. once the i is greater than all of the other elements in the array, return.
+//
+
+function printLongestWord(arr) {
+   let word = '';
+    for(let i = 0; i < newArr.length; i++){
+       if( newArr[i].length > word){
+           word = newArr[i];
+    };
+   };
+   return word;
+};
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
