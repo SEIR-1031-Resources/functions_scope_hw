@@ -27,6 +27,13 @@ console.log(isAVowel('u'));
 console.log(isAVowel('g'))
 
 // 4. getTwoLengths
+function getTwoLengths(word1, word2) {
+	return [word1.length, word2.length];
+}
+
+console.log('Problem 4:');
+console.log(getTwoLengths('Hank', 'Hippopopalous'));
+
 
 // 5. sumArray
 
