@@ -20,12 +20,20 @@ console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+    
+    for(i =0; i < vowels.length; i++){
+        if(letter == vowels[i]){
+            return true;
+        }
+    }
+    return false;
 }
+console.log(isAVowel("b"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    
 }
 
 // 5. sumArray
