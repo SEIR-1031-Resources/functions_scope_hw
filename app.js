@@ -32,7 +32,17 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num === 1) return false
+
+    if (num < 4) return true
+
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false
+        }
+    }
+
+    return true
 }
 
 // 6.2 printPrimes
