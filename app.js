@@ -37,23 +37,36 @@
 // console.log(getTwoLengths("Hank", "Hippopopalous"))
 
 // 5. sumArray
-function sumArray(arr) {
-    total = 0
-    for (let i = 0; i < arr.length; i++){
-        total += arr[i]
-    } return total
+// function sumArray(arr) {
+//     total = 0
+//     for (let i = 0; i < arr.length; i++){
+//         total += arr[i]
+//     } return total
+// }
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// 6.1 checkPrime
+function checkPrime(num) {
+    for (let i = 2; i <= num; i++) //starting from 2 onward
+        if (num % i !== 0 || num === 2){ //if num % i is not 0 OR num is 2, then its prime. 2 is PRIME.
+            return true //then prime
+    } else {
+        return false //then not prime
 }
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+    }
+console.log(checkPrime(5));
 
-// // 6.1 checkPrime
-// function checkPrime(num) {
-//     // YOUR CODE HERE
-// }
 
-// // 6.2 printPrimes
-// function printPrimes(num) {
-//     // YOUR CODE HERE
-// }
+// 6.2 printPrimes
+function printPrimes(num) {
+    let arr = [] //empty array that we will eventually push
+    for (let i = 2; i <= num; i++) //starting from 2 onward checkPrime
+        if (checkPrime(i)){ //if the function of checkPrime is true, then push it in the array
+            arr.push(i)
+        }
+        console.log(arr) 
+}
+console.log(printPrimes(97));
 
 // // 7. printLongestWord
 // function printLongestWord(arr) {
