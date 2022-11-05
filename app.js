@@ -81,14 +81,30 @@ function printLongestWord(arr) {
     return longestWord;
 }
 
-console.log(printLongestWord(['tyler', 'john', 'hoffman', 'hofman1', 'ty']));
-
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    let str = '0, 1';
+    let num1 = 0;
+    let num2 = 1;
+    let sum;
+
+    for (let i = 1; i <= num; i++) {
+        if (num1 + num2 > num) {
+            return str;
+        }
+
+        sum = num1 + num2;
+        num1 = num2;
+        num2 = sum;
+        str = `${str}, ${sum}`;
+    }
+
+    return str;
 }
+
+console.log(eulerFibo(317811))
 
 // 9. findNeedle
 function findNeedle(arr) {
@@ -100,7 +116,7 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-module.exports = {
+/* module.exports = {
     calculateCube,
     isAVowel,
     getTwoLengths,
@@ -111,4 +127,4 @@ module.exports = {
     eulerFibo,
     findNeedle,
     sumPositive
-};
+}; */
