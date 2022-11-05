@@ -55,13 +55,29 @@ console.log(sumArray([10,15,10]))
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
-}
+    if (num <= 1) return false;
+    if (num === 2) return true;
 
+        for (let i = 2; i < num; i++){
+            if (num % i === 0){
+                return false;
+            }
+        }
+        return true;
+}
+let randomNum = Math.floor(Math.random() * 10)
+console.log(randomNum)
+console.log(checkPrime(randomNum))
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+    for (let i = 0; i <= num; i++){
+        if(checkPrime(i) === true){
+            console.log(i)
+        }
+    }
 }
-
+printPrimes(randomNum)
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
