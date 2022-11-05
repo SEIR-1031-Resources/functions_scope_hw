@@ -18,8 +18,41 @@ function calculateCube(num) {
 console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
+    
+    let is_Vowel = false 
+
+    if ( letter === 'a'){
+        console.log('yeah it works.')
+        is_Vowel = true
+        return is_Vowel
+    }else if( letter ==='e'){
+        console.log('its a vowel')
+        is_Vowel = true
+        return is_Vowel
+    } else if (letter ==='i'){
+        console.log("its a vowel")
+        is_Vowel = true
+        return is_Vowel
+    } else if(letter === 'o'){
+        console.log("it's a vowel")
+        is_Vowel = true
+        return is_Vowel
+    }else if(letter === 'u'){
+        console.log("its a vowel")
+        is_Vowel = true
+        return is_Vowel
+    }else{
+        console.log("its not a vowel")
+        is_Vowel = false
+        return is_Vowel
+    }
+    
+    }
+    
+    console.log(isAVowel("a"));
     // YOUR CODE HERE
-}
+
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
