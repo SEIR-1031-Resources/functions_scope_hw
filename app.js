@@ -15,9 +15,11 @@ console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    let vowels = 'aeiou' 
+    console.log(vowels.indexOf('e'))
+  
 }
-
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
