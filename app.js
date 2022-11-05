@@ -1,12 +1,14 @@
 // 1.1. What is the difference between a parameter and an argument?
-
+ //Parameter is the kind of data needed to be passed through the function, the data is the data being passed through
 // 1.2. Within a function, what is the difference between return and console.log?
-
+//a return statement stops the execution of the function code, and allows other code to use the value passed by the return
+//console.log will log the return of the function***?
 // 1. 3. What are the implications of the ability of a function to return a value?
+//parameters are an implication, because they are place holders for future values.
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    
 }
 
 // 3. isAVowel
@@ -26,8 +28,11 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
-}
+    for (let i =2; i<= Math.sqrt(num); i++) {
+        if (num % i === 0){
+            return false;
+    };
+};
 
 // 6.2 printPrimes
 function printPrimes(num) {
