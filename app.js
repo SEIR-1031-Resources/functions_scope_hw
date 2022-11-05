@@ -6,39 +6,17 @@
 // We can hold functions in variables.
 
 // 2. calculateCube
-function calculateCube(num) {
-    return num ** 3;
-}
 
-console.log(calculateCube(5));
 
 // 3. isAVowel
-function isAVowel(letter) {
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
-    if (vowels.indexOf(letter) === -1) return false;
-    return true;
-}
 
-console.log(isAVowel('a'));
-console.log(isAVowel('e'));
-console.log(isAVowel('i'));
-console.log(isAVowel('o'));
-console.log(isAVowel('u'));
 
 // 4. getTwoLengths
-function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
-}
 
 // 5. sumArray
-function sumArray(arr) {
-    // YOUR CODE HERE
-}
+
 
 // 6.1 checkPrime
-function checkPrime(num) {
-    // YOUR CODE HERE
-}
 
 // 6.2 printPrimes
 function printPrimes(num) {
