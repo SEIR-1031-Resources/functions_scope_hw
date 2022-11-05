@@ -44,8 +44,21 @@ function sumArray(arr) {
 	return result;
 }
 
-// 6.1 checkPrime
+console.log('Problem 5:')
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
+// 6.1 checkPrime
+const checkPrime = num => {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    } return false;
+}
+
+console.log('Problem 6.1:');
+console.log(checkPrime(2)); // true
+console.log(checkPrime(4)); // false
+console.log(checkPrime(97)); // true
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
