@@ -33,23 +33,51 @@ function getTwoLengths(word1, word2) {
     wordLengths.push(length2)
     return wordLengths
 }
-
+console.log(`\n 4. getTwoLen`);
 console.log(getTwoLengths('hi', 'bye'))
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let sumOfArray = 0;
+    for (let i = 0; i < arr.length; i++){
+        sumOfArray += arr[i]
+    }
+    return sumOfArray
 }
+
+console.log(`\n 5. sumArray`);
+console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num === 1 || num === 0){
+        return false
+    } else if (num > 1) {
+        for (let i = 2; i < num; i++){
+            if (num % i !== 0) {
+                return true
+            } else {
+                return false 
+            }
+        }
+    }
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    let primeNumbers = []
+    for(let j = 1; j <= num; j++) {
+    if(checkPrime(j)){
+        primeNumbers.push(j)
+        // console.log(j)
+    } 
+  }
+  return primeNumbers
 }
+console.log(`\n 6 checkPrime`);
+console.log(checkPrime(11))
+printPrimes(11)
+console.log(printPrimes(11))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
