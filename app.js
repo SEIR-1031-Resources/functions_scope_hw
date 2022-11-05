@@ -75,15 +75,19 @@ function printPrimes(num) {
   return primeNumbers
 }
 
-console.log(`\n 6 checkPrime`);
+console.log(`\n 6.1 & 6.2 checkPrime`);
 console.log(checkPrime(11))
 console.log(printPrimes(11))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    arr.sort((a,b) => a.length - b.length)
+    let longestWord = arr.pop()
+    return longestWord
 }
 
+console.log(`\n 7. printLongestWord`);
+console.log(printLongestWord(["BoJack", "Princess", "TheQuickBrownFoxJumps", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
