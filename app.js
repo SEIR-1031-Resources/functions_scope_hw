@@ -135,12 +135,15 @@ function eulerSum (arr) {
     return sum;
 }
 
-console.log(eulerSum(eulerFiboEven(317811)));
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].toLowerCase() === 'needle') return `found the needle at position ${i}`;
+    }
 }
+
+console.log(findNeedle(['tyler', 'fhjsdkhfkljsdfs', 'aaaaaaaaa', 'jfkhsjkf', '12124723985732892579834', 'needle']))
 
 // 10. sumPositive
 function sumPositive(arr) {
