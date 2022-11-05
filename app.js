@@ -15,7 +15,9 @@
 */
 
 // 2. calculateCube
-
+function calculateCube(num) {
+    console.log(Math.pow(num, 3));
+}
 
 // 3. isAVowel
 
