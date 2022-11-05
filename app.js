@@ -58,16 +58,6 @@ function checkPrime(num) {
 
     return true;
 }
-console.log(checkPrime(2)); // true
-console.log(checkPrime(1)); // false
-console.log(checkPrime(-5)); // false
-console.log(checkPrime(22)); // false
-console.log(checkPrime(27)); // false
-console.log(checkPrime(21)); // false
-console.log(checkPrime(200)); // false
-console.log(checkPrime(2199)); // false
-console.log(checkPrime(47)); // true
-console.log(checkPrime(43)); // true
 
 // 6.2 printPrimes
 function printPrimes(num) {
@@ -78,12 +68,20 @@ function printPrimes(num) {
     }
 }
 
-printPrimes(101);
-
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let longestWord = '';
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > longestWord.length) {
+            longestWord = arr[i];
+        }
+    }
+
+    return longestWord;
 }
+
+console.log(printLongestWord(['tyler', 'john', 'hoffman', 'hofman1', 'ty']));
 
 // BONUS!
 
