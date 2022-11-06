@@ -25,11 +25,17 @@ return true
     return false
 }
 }
-console.log(isAVowel("io"));
+//console.log(isAVowel("io"));
+
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+   const stringLengths = [];
+    stringLengths[0] = word1.length;
+    stringLengths[1] = word2.length;
+    return stringLengths
 }
+
+//console.log(getTwoLengths("two","theufjkuihgyjurythgu"));
 
 // 5. sumArray
 function sumArray(arr) {
