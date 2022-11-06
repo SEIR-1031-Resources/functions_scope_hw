@@ -30,7 +30,7 @@ function isAVowel(letter) { //Starting commit 3
 }
 console.log(isAVowel("R"))
 // 4. getTwoLengths
-console.log("4. Get Two Lengths: ")
+console.log("4. Get Two Lengths: ") //Starting commit 4
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
     return `The length of ${word1} and ${word2} are: ${word1.length} and ${word2.length} respectivelly`
