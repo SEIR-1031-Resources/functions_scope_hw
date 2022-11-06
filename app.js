@@ -136,15 +136,21 @@ let totalEven = 0;
         return (`The number is too high - (${totalEven})`)
     } 
 
-console.log(eulerFibo(31));
+//console.log(eulerFibo(31));
 
 // ***** The answer is 31 **** //
 
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+ if (arr.includes("needle") === true) {
+  let needlePos = arr.indexOf("needle");
+  return `found the needle at position ${needlePos}`
+ }   
+return "Does not include needle"
 }
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
+
 
 // 10. sumPositive
 function sumPositive(arr) {
