@@ -39,8 +39,13 @@ function getTwoLengths(word1, word2) {
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+   let sumOfArray = 0;
+    for (i = 0; i <arr.length; i++){
+        sumOfArray = (sumOfArray + arr[i]);      
 }
+return sumOfArray
+}
+//console.log(sumArray([1,2,3,4,5,6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
