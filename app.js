@@ -71,15 +71,51 @@ printPrimes(97);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let result = arr[0];
+    for (let i = 0; i < arr.length; i++ ) {
+        if (result.length < arr[i].length) {
+            result = arr[i];
+        }
+    } return result;
 }
+
+console.log('Problem 7:')
+console.log(
+	printLongestWord([
+		'BoJack',
+		'Princess',
+		'Diane',
+		'a',
+		'Max',
+		'Peanutbutter',
+		'big',
+		'blob',
+	])
+);
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+	let array = [1, 2];
+	if (num === 1) return 0;
+	if (num === 2) return 2;
+	for (let i = 2; i < num; i++) {
+		array.push(array.at(-1) + array.at(-2));
+	}
+	let evensArray = [];
+	for (let i = 0; i < array.length; i++) {
+		if (array[i] % 2 === 0 && !(array[i] > 4000000)) {
+			evensArray.push(array[i]);
+		} else if (array[i] > 4000000) {
+			return 'The inputted number is too large.';
+		}
+	} return evensArray.reduce((p, v) => p + v);
 }
+
+console.log('Problem 8');
+console.log(eulerFibo(32)); // works
+console.log(eulerFibo(33)); // the inputted number is too large
 
 // 9. findNeedle
 function findNeedle(arr) {
