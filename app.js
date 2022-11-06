@@ -3,12 +3,12 @@
 // 1.2. Within a function, what is the difference between return and console.log?
 //ANSWER: Functions ALWAYS return something 100% of the time so every funciton needs it to push out the value of the funciton. While console log shows you the out put of the code and acts to test it but shouldnt stay in your final code.
 // 1. 3. What are the implications of the ability of a function to return a value?
-
+//ANSWER: I think its because we can reuse a function multiple times.
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+   return num * num * num
 }
-
+console.log(calculateCube(5))
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
