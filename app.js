@@ -54,13 +54,36 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    for(let i = 2, s = Math.sqrt(num); i <=s; i++)
+        if(num % i === 0) return false;
+    return num > 1;
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    let array = [], upperLimit = Math.sqrt(num), output = [];
+
+    for (let i = 0; i < num; i++){
+        array.push(true);
+    }
+
+    for (let i = 2; i <= upperLimit; i++){
+        if (array[i]) {
+            for (let j = i * i; j < num; j += i) {
+                array[j] = false;
+            }
+        }
+    }
+
+    for (let i = 2; i < num; i++){
+        if(array[i]) {
+            output.push(i);
+        }
+    }
+
+    return output;
 }
+console.log(printPrimes(97));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
