@@ -19,7 +19,7 @@ function calculateCube(num) {
 console.log(calculateCube(5))
 // 3. isAVowel
 
-function isAVowel(letter) {
+function isAVowel(letter) { //Starting commit 3
     // YOUR CODE HERE
     console.log(`3. Is a Vowel? Is this ${letter} a vowel:`)
     if (letter.toLowerCase() === "a" || letter.toLowerCase() === "e" || letter.toLowerCase() === "i" || letter.toLowerCase() === "o" || letter.toLowerCase() === "u") {
