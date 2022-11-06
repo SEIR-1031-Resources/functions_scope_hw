@@ -14,13 +14,18 @@ function calculateCube(num) {
   return numCubed
 }
 
-console.log(calculateCube(5))
+//console.log(calculateCube(5))
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+newLetter = letter.toUpperCase();
+if (newLetter === "A" || newLetter === "E" || newLetter === "I" || newLetter === "O" || newLetter == "U"){
+return true
+} else {
+    return false
 }
-
+}
+console.log(isAVowel("io"));
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
