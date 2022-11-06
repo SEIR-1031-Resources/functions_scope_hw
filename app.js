@@ -1,9 +1,17 @@
 // 1.1. What is the difference between a parameter and an argument?
+/* Parameters are like a place holder for the argument. The arguements are the actual values
+ for example: 
+ function mathIsHard(num1, num2){
+    return num1 * num2
+ }
+ console.log(mathIsHard(20,53))
 
+ the parameter is (num1,num2) && the arguement is mathIsHard(20,53)
+ */
 // 1.2. Within a function, what is the difference between return and console.log?
-
+/* console.log is a funciton that logs the arguments you pass to the browser && a return is like a set of intructions for the function. */
 // 1. 3. What are the implications of the ability of a function to return a value?
-
+/* I am not sure I fully understood the question, but I believe when a function returns a value the return statement has been executed.
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
