@@ -73,12 +73,12 @@ printPrimes(1);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    let result = arr[0];
-    for (let i = 0; i < arr.length; i++ ) {
+  let result = arr[0];
+  for (let i = 0; i < arr.length; i++ ) {
         if (result.length < arr[i].length) {
             result = arr[i];
         }
-    } return result;
+  } return result;
 }
 
 console.log('Problem 7:')
@@ -101,7 +101,6 @@ console.log(
 function eulerFibo(num) {
   let array = [1, 2];
   if (num === 1) return 0;
-  if (num === 2) return 2;
   for (let i = 2; i < num; i++) {
   if (array.at(-1) + array.at(-2) <= num) {
 	array.push(array.at(-1) + array.at(-2));
