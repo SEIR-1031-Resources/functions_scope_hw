@@ -49,7 +49,7 @@ function sumArray(arr) {
 console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // 6.1 checkPrime
-console.log("6. Prime numbers: ")
+console.log("6. Prime numbers: ") //Starting commit 6
 let a = 0
 function checkPrime(num) {
     // YOUR CODE HERE
