@@ -10,9 +10,22 @@ function calculateCube(num) {
 }
 console.log(calculateCube(5))
 // 3. isAVowel
-function isAVowel(letter) {
-    // YOUR CODE HERE
-}
+    function isAVowel(letter) {
+        if (letter = 'a') {
+            return true
+        } else if (letter = 'e') {
+            return true
+        } else if (letter = 'i') {
+            return true
+        } else if (letter = 'o') {
+            return true
+        } else if (letter = 'u') {
+            return true
+        } else {
+            return false
+        }
+    }
+    console.log(isAVowel('a'))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
