@@ -96,7 +96,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // BONUS!
 
 // 8. eulerFibo
-console.log("Project Euler Problem: ")
+console.log("Project Euler Problem: ") // Starting commit Project Euler Problem
 function eulerFibo(num) {
     // YOUR CODE HERE
     const arr =[]
