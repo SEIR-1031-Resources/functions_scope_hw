@@ -10,7 +10,7 @@
 //  - 2) Its keeps the program organised 
 //  - 3) Function can do a task (running a bunch of code to solve problem)
 // 2. calculateCube
-console.log("2. Calculate the Cube")
+console.log("2. Calculate the Cube") //Starting commit 2
 function calculateCube(num) {
     // YOUR CODE HERE
     // call a is the edge of a cube
