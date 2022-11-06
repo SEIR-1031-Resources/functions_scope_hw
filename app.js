@@ -50,18 +50,49 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    let factors =0;
+    for (i=2;i<=num;i++){
+        if (num%i === 0){
+            factors++
+            
+        }
+    }
+    if (factors >2){
+        return false
+    }
+    else {
+        return true
+    }
+   
 }
+console.log(checkPrime(17))
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
-}
+    let factors =0;
+    for (i=0;i<=num;i++){
+        if (num%i === 0){
+            factors++
+            console.log(i)
+        }
+    }
+    if (factors >2){
+        return false
+    }
+    else {
+        return true
+        
+        
+    }
 
+}
+console.log(printPrimes(100))
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+    return arr.length
 }
-
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 // BONUS!
 
 // 8. eulerFibo
