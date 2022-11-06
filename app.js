@@ -52,7 +52,7 @@ const checkPrime = num => {
     if (num < 2) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) return false;
-    } return false;
+    } return true;
 }
 
 console.log('Problem 6.1:');
@@ -60,9 +60,14 @@ console.log(checkPrime(2)); // true
 console.log(checkPrime(4)); // false
 console.log(checkPrime(97)); // true
 // 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
+function printPrimes(limit) {
+    for (let i = 2; i <= limit; i++ ) {
+        if(checkPrime(i)) console.log(i);
+    }
 }
+
+console.log('Problem 6.2:');
+printPrimes(97);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
