@@ -16,6 +16,12 @@ function calculateCube(num) {
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    if(letter.toLowerCase() === "a" || letter.toLowerCase() === "e" || letter.toLowerCase() === "i" || letter.toLowerCase() === "o" || letter.toLowerCase() === "u") {
+        return true
+    }
+    else {
+        return false
+    }
 }
 
 // 4. getTwoLengths
@@ -60,7 +66,7 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(calculateCube(5))
+console.log(isAVowel("a"))
 
 /*
 module.exports = {
