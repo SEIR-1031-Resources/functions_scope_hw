@@ -117,7 +117,7 @@ function eulerFibo(num) {
 }
 console.log(eulerFibo(55))
 // 9. findNeedle
-console.log("A Needle in the Haystack:")
+console.log("A Needle in the Haystack:") //Starting commit A Needle in the Haystack
 function findNeedle(arr) {
     // YOUR CODE HERE
     let checkString = ""
