@@ -47,15 +47,45 @@ return sumOfArray
 }
 //console.log(sumArray([1,2,3,4,5,6]));
 
+
+
+
+
+
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    let isPrime = true;
+     if (num <= 1) {
+        isPrime = false;
+        return isPrime
+    }else {
+         for (let i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            return isPrime;
+    }
 }
+console.log(checkPrime(7));
+
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+   const primeArray = [];
+    let count = 0;
+    let primeNumber = 0;
+    for (i = 0; i <= num; i++){
+        if (checkPrime(primeNumber) === true) {
+            primeArray[count] = primeNumber;
+            count++;
+        }
+        primeNumber++;
+    }
+        return primeArray
 }
+ console.log(printPrimes(3433));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
