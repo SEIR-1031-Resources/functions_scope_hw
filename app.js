@@ -35,12 +35,18 @@ function getTwoLengths(word1, word2) {
     return ("[" + word1.length + "," + word2.length + "]")
     
 }
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
-}
+    var s=0;
+    for(i=0;i<arr.length;i++){
+        s=s+arr[i]
+    }
+    return s;
 
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
