@@ -36,6 +36,11 @@ function getTwoLengths(word1, word2) {
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
+    let result = 0;
+    for(i=0;i<arr.length;i++) {
+        result = result + arr[i]
+    }
+    return result
 }
 
 // 6.1 checkPrime
@@ -70,7 +75,7 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 /*
 module.exports = {
