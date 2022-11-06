@@ -27,6 +27,10 @@ function isAVowel(letter) {
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    let results = [];
+    results.push(word1.length);
+    results.push(word2.length);
+    return results
 }
 
 // 5. sumArray
@@ -66,7 +70,7 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(isAVowel("a"))
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 /*
 module.exports = {
