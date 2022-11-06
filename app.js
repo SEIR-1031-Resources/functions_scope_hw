@@ -149,13 +149,20 @@ function findNeedle(arr) {
  }   
 return "Does not include needle"
 }
-console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
+//console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
 
 // 10. sumPositive
 function sumPositive(arr) {
-    // YOUR CODE HERE
+    let posArr = 0;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > 0) {
+            posArr = (posArr + arr[i]);
+        }
 }
+return posArr
+}
+//console.log(sumPositive([1, -4, 7, 12, 2, 100, 101, -786]));
 
 module.exports = {
     calculateCube,
