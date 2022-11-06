@@ -44,13 +44,24 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num < 2) return false
+    let sqRoot = Math.sqrt(num)
+    for (let i = 2; i <= sqRoot; i++) {
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true
 }
+console.log(checkPrime())
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for (let i= 2; i <= num; i++) {
+        if (checkPrime(i)) console.log(i)
+    }
 }
+console.log(printPrimes(97))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
