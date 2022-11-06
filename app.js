@@ -31,14 +31,12 @@ function isAVowel(letter) {
 console.log(isAVowel("a"))
 
 // 4. getTwoLengths
-function getTwoLengths(word1, word2) {
-    let getTwoLengths = ["hank", "hippopopalous"];
-    for (let i = 0; i<getTwoLengths.length; i++);{
-        console.log(getTwoLengths.length[i]);
-    }
+function getTwoLengths(str1, str2) {
+    return [str1.length, str2.length];
     // YOUR CODE HERE
 }
-console.log("hank", "hippopopalous")
+
+console.log(getTwoLengths("Hank","Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
