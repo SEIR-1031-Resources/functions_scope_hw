@@ -37,7 +37,7 @@ function getTwoLengths(word1, word2) {
 }
 console.log(getTwoLengths("Hank", "Hippopopalous"))
 // 5. sumArray
-console.log("5. Sum Array: ")
+console.log("5. Sum Array: ")// Starting commit 5
 function sumArray(arr) {
     // YOUR CODE HERE
     let sumArray = 0;
