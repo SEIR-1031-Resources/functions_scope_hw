@@ -106,14 +106,40 @@ return biggestWord
 
 
 
-console.log(printLongestWord([ "Peanutbutter","BoJack", "Princess", "Diane", "a", "Max", "big", "blob"]));
+//console.log(printLongestWord([ "Peanutbutter","BoJack", "Princess", "Diane", "a", "Max", "big", "blob"]));
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
-}
+const arr = [1];
+let currentNum = 1;
+let previousNum = 0;
+let totalEven = 0;
+    if ( num <=1){
+        return 0
+    } 
+    while (num > 0){
+        currentNum += previousNum;
+        previousNum = currentNum - previousNum;
+        if (currentNum % 2 === 0){
+        arr.push(currentNum);
+        }
+        num -= 1;
+    }
+    for (i = 2; i <= arr.length; i++){
+        totalEven = totalEven + arr[(i-1)];
+    }
+    if (totalEven <= 4000000){
+    return totalEven
+    }else 
+        return (`The number is too high - (${totalEven})`)
+    } 
+
+console.log(eulerFibo(31));
+
+// ***** The answer is 31 **** //
+
 
 // 9. findNeedle
 function findNeedle(arr) {
