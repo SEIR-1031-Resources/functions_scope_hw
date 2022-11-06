@@ -1,19 +1,33 @@
 // 1.1. What is the difference between a parameter and an argument?
-
+/* Parameters are the variables that you declare when writing a function
+while the arguements are the values that you input*/
 // 1.2. Within a function, what is the difference between return and console.log?
-
-// 1. 3. What are the implications of the ability of a function to return a value?
-
+/*console.log is a function that simply tells java to display
+something in the console while "return" will return the value of 
+a function and store it  */
+// 1. 3. What are the implications of the ability of a function to return a value? (I feel like I'm being pranked with this wording)
+/* the implications of the ability of a funciton to return a value
+is that all conditions to write a function in js must be met and 
+written correctly for the function to work*/
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
-}
+ return num*num*num
 
+}
+// console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    if (letter == "a" || letter == "e" || letter == "i" || letter =="o" || letter == "u"){
+    return true}
+    else if (letter == "y"){
+        return "sometimes"
+    }
+    else {
+        return false}
 }
-
+console.log(isAVowel("a"));
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
