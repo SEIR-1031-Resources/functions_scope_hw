@@ -130,7 +130,7 @@ function findNeedle(arr) {
 console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
 // 10. sumPositive
-console.log("Sum the Positive:")
+console.log("Sum the Positive:") // Commit Sum the Positive
 function sumPositive(arr) {
     // YOUR CODE HERE
     let sumPositive = 0
