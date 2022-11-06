@@ -80,8 +80,8 @@ function printPrimes(num) {
     return `The new array of Prime Numbers from 1 to ${a} is: ${num}`
 }
 console.log(printPrimes(checkPrime(10)))
-// 7. printLongestWord
-console.log("7. Print Longest word:")
+// 7. printLongestWord 
+console.log("7. Print Longest word:")// Starting commit 7
 function printLongestWord(arr) {
     // YOUR CODE HERE
     let store = "";
