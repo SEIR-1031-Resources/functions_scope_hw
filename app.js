@@ -68,6 +68,8 @@ function printPrimes(limit) {
 
 console.log('Problem 6.2:');
 printPrimes(97);
+console.log('Print prime with 9 as argument:')
+printPrimes(1);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
@@ -101,7 +103,9 @@ function eulerFibo(num) {
 	if (num === 1) return 0;
 	if (num === 2) return 2;
 	for (let i = 2; i < num; i++) {
+    if (array.at(-1) + array.at(-2) <= num) {
 		array.push(array.at(-1) + array.at(-2));
+    }
 	}
 	let evensArray = [];
 	for (let i = 0; i < array.length; i++) {
@@ -139,15 +143,15 @@ function sumPositive(arr) {
 console.log('Problem 10:');
 console.log(sumPositive([1, -4, 7, 12]));
 
-// module.exports = {
-//     calculateCube,
-//     isAVowel,
-//     getTwoLengths,
-//     sumArray,
-//     checkPrime,
-//     printPrimes,
-//     printLongestWord,
-//     eulerFibo,
-//     findNeedle,
-//     sumPositive
-// };
+module.exports = {
+    calculateCube,
+    isAVowel,
+    getTwoLengths,
+    sumArray,
+    checkPrime,
+    printPrimes,
+    printLongestWord,
+    eulerFibo,
+    findNeedle,
+    sumPositive
+};
