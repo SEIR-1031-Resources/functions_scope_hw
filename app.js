@@ -122,14 +122,31 @@ function printPrimes(num) {
     
     }
 
-console.log(printPrimes(3))
+//console.log(printPrimes(3))
 // 7. printLongestWord
 
-function printLongestWord() {
+function printLongestWord(array) {
     // YOUR CODE HERE
+    let longestWord = "";
+for ( i = 0; i < array.length; i++){
+   // console.log("a")
+    if ( array[i].length > longestWord.length){
+       // console.log("b")
+        longestWord = array[i]
+        console.log(longestWord)
+    }
+    else if (array[i].length == longestWord.length ){
+        console.log("nope")
+    }
+}
+   // console.log("c")
+   // console.log(longestWord)
+    return longestWord
+
+
 
 }
-
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "bigaaaaaaaaa", "blob"]));
 // BONUS!
 
 // 8. eulerFibo
