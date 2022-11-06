@@ -84,18 +84,34 @@ function printLongestWord(arr) {
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    result=[0, 1] // including 0, 1 in the opening array so the Fibo sequence has a first pattern with which to start adding once the for loop begins
+    for (let i=1;i<=num;i++){
+      if (i+result[i-1] > num) {
+        // ^^^ stops the loop if the next Fibo-number is greater than the entered number-limit (num).
+      return result  
+      } else {
+        result.push(i+result[i-1])
+      }
+        // push into the result array of even Fibo numbers 
+    }
 }
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    let result = arr.indexOf("needle")
+    return console.log(`found the needle at position ${result}`)
 }
+// console.log (findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
 // 10. sumPositive
 function sumPositive(arr) {
-    // YOUR CODE HERE
-}
+    for (i in arr) {
+        if ((arr[i]>0)) {
+            result += arr[i]
+        }
+        } return result
+    }
+// console.log (sumPositive([-1,-2,-5,1,-100]))
 
 module.exports = {
     calculateCube,
