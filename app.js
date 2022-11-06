@@ -6,10 +6,15 @@
 // console.log will just log the outcome to the console. 
 // 1. 3. What are the implications of the ability of a function to return a value?
 // This means that we can use functions to find values and then store them and then use these values in other areas of the code.
+
+
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+  let numCubed = (num * num * num);
+  return numCubed
 }
+
+console.log(calculateCube(5))
 
 // 3. isAVowel
 function isAVowel(letter) {
