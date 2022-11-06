@@ -118,8 +118,9 @@ function eulerFibo(num) {
 }
 
 console.log('Problem 8');
-console.log(eulerFibo(32)); // works
-console.log(eulerFibo(33)); // the inputted number is too large
+console.log(eulerFibo(10)); // 10
+console.log(eulerFibo(100)); // 44
+console.log(eulerFibo(6000000)); // the inputted number is too large
 
 // 9. findNeedle
 function findNeedle(arr) {
