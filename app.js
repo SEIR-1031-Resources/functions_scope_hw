@@ -15,7 +15,7 @@ function calculateCube(num) {
     let volume = num * num * num
     return volume
 }
-console.log(calculateCube(5));
+//console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
     
@@ -49,7 +49,7 @@ function isAVowel(letter) {
     
     }
     
-    console.log(isAVowel("a"));
+   // console.log(isAVowel("a"));
     // YOUR CODE HERE
 
 
@@ -65,7 +65,7 @@ function getTwoLengths(word1, word2) {
     console.log(word_length)
     return word_length
 }
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+//console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
@@ -76,21 +76,58 @@ function sumArray(arr) {
     }
     return sum
 }
-console.log(sumArray([1, 2, 3, 4, 5, 6]))
+//console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // 6.1 checkPrime
-function checkPrime(num) {
+    function checkPrime(num) {
+        if(num === 1){
+            return false
+        }
+        if(num < 4){
+            return true
+        }
+        for( let i = 2; i < num; i++){
+            console.log(num) //just testing
+            console.log(i)  //testing
+            
+            if( num % i === 0){
+                console.log('a') // checking which if statement is running
+                return false
+        
+                
+            }
+            return true
+            }
     // YOUR CODE HERE
-}
-
+    
+        }
+   // console.log(checkPrime(9))
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
-}
 
+    let prime = []
+   for ( j = 0;  j <= num; j++){
+    console.log(j)
+    console.log(checkPrime(num))
+    console.log(num)
+   
+    if (checkPrime(num) === true){ 
+        console.log(j)
+        prime.push(j)
+        console.log(prime)
+    }
+    }
+
+    return prime   
+    
+    }
+
+console.log(printPrimes(3))
 // 7. printLongestWord
-function printLongestWord(arr) {
+
+function printLongestWord() {
     // YOUR CODE HERE
+
 }
 
 // BONUS!
