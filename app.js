@@ -21,18 +21,24 @@ console.log(calculateCube(5))
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    var letter = letter.toLowerCase();
     if (letter==='a'||letter === 'e' || letter==='i' || letter === 'o' || letter === 'u') {
         return true
     } else {
         return false
     }
 }
-console.log(isAVowel('a'))
+console.log(isAVowel("a"))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
+    let getTwoLengths = ["hank", "hippopopalous"];
+    for (let i = 0; i<getTwoLengths.length; i++);{
+        console.log(getTwoLengths.length[i]);
+    }
     // YOUR CODE HERE
 }
+console.log("hank", "hippopopalous")
 
 // 5. sumArray
 function sumArray(arr) {
