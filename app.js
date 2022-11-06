@@ -68,7 +68,7 @@ function checkPrime(num) {
             return isPrime;
     }
 }
-console.log(checkPrime(7));
+//console.log(checkPrime(7));
 
 
 // 6.2 printPrimes
@@ -85,12 +85,28 @@ function printPrimes(num) {
     }
         return primeArray
 }
- console.log(printPrimes(3433));
+// console.log(printPrimes(3433));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+const wordLengthArray = []   
+let biggestNumber = null;
+
+for (i = 0; i <arr.length; i++){
+    wordLengthArray[i] = arr[i].length;
 }
+for (j = 0; j <arr.length; j++){
+    if (wordLengthArray[j] > biggestNumber){
+        biggestNumber = wordLengthArray[j];
+        biggestWord = arr[j]
+    }
+}
+return biggestWord
+}
+
+
+
+console.log(printLongestWord([ "Peanutbutter","BoJack", "Princess", "Diane", "a", "Max", "big", "blob"]));
 
 // BONUS!
 
