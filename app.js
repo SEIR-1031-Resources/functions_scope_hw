@@ -99,21 +99,19 @@ console.log(
 
 // 8. eulerFibo
 function eulerFibo(num) {
-	let array = [1, 2];
-	if (num === 1) return 0;
-	if (num === 2) return 2;
-	for (let i = 2; i < num; i++) {
-    if (array.at(-1) + array.at(-2) <= num) {
-		array.push(array.at(-1) + array.at(-2));
+  let array = [1, 2];
+  if (num === 1) return 0;
+  if (num === 2) return 2;
+  for (let i = 2; i < num; i++) {
+  if (array.at(-1) + array.at(-2) <= num) {
+	array.push(array.at(-1) + array.at(-2));
     }
-	}
-	let evensArray = [];
-	for (let i = 0; i < array.length; i++) {
-		if (array[i] % 2 === 0 && !(array[i] > 4000000)) {
-			evensArray.push(array[i]);
-		} else if (array[i] > 4000000) {
-			return 'The inputted number is too large.';
-		}
+  }
+  let evensArray = [];
+  for (let i = 0; i < array.length; i++) {
+	if (array[i] % 2 === 0 && !(array[i] > 4000000)) {
+		evensArray.push(array[i]);
+		} 
 	} return evensArray.reduce((p, v) => p + v);
 }
 
