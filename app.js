@@ -146,12 +146,12 @@ for ( i = 0; i < array.length; i++){
 
 
 }
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "bigaaaaaaaaa", "blob"]));
+//console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "bigaaaaaaaaa", "blob"]));
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    // YOUR CODE HERE   
 }
 
 // 9. findNeedle
