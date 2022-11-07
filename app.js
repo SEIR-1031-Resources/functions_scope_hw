@@ -51,40 +51,49 @@
 
 
 // 6.1 checkPrime
-    function checkPrime(num)  {
-    if (num===1){
-        return false;
-    }else if(num===2){
-        return true;
-    }else{
-    for (let i = 2; i<num; i++){
-        if(num%i===0){
-            return false;
-        }
+//     function checkPrime(num)  {
+//     if (num===1){
+//         return false;
+//     }else if(num===2){
+//         return true;
+//     }else{
+//     for (let i = 2; i<num; i++){
+//         if(num%i===0){
+//             return false;
+//         }
         
-    }   
-    return true;
-}
-}
-console.log(checkPrime(18));
+//     }   
+//     return true;
+// }
+// }
+// console.log(checkPrime(18));
 
 
-// 6.2 printPrimes
-function printPrimes(num) {
-    for (let i = 2; i <=num; i++) {
-        if(checkPrime(i)===true){
-            console.log(i)
-        }
+// // 6.2 printPrimes
+// function printPrimes(num) {
+//     for (let i = 2; i <=num; i++) {
+//         if(checkPrime(i)===true){
+//             console.log(i)
+//         }
         
-    }
-}
-console.log(printPrimes(97));
-"Commit 6 - Prime Numbers"
+//     }
+// }
+// console.log(printPrimes(97));
+// "Commit 6 - Prime Numbers"
 
 // 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
+    const printLongestWord=(arr) =>{
+    let longest=""; 
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].length>longest.length){
+        longest=arr[i];
+    }
 }
+        return longest;
+    }
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// BONUS!
+"Commit 7 - Longest Word"
 
 // BONUS!
 
