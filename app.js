@@ -81,6 +81,13 @@ function printPrimes(num) {
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+    let result = "";
+    for(i=0;i<arr.length;i++) {
+        if(arr[i].length > result.length) {
+            result = arr[i]
+        }
+    }
+    return result
 }
 
 // BONUS!
@@ -100,9 +107,7 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(checkPrime(73));
-console.log(checkPrime(77));
-console.log(printPrimes(97));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 /*
 module.exports = {
