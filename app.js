@@ -7,18 +7,26 @@
  "Commit 1 - Verbal questions"
 // 2. calculateCube
 //function calculateCube(num) {
-        let calculateCube= function(num){
-        return num*num*num;
-    }
-console.log(calculateCube(5));
+//         let calculateCube= function(num){
+//         return num*num*num;
+//     }
+// console.log(calculateCube(5));
  
-"Commit 2- Cube Calculation"
+// "Commit 2- Cube Calculation"
 
 
 // 3. isAVowel
-function isAVowel(letter) {
-    // YOUR CODE HERE
+let isAVowel= function(letter){
+    const vowel= ['a','e','i','o','u'];
+    for (let i = 0; i < vowel.length; i++) {
+    if (vowel[i]=== letter.toLowerCase()){
+        return true;
+    } 
 }
+        return false;
+}
+console.log(isAVowel("a"));
+"Commit 3 - is a Vowel"
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
@@ -62,15 +70,15 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
+// module.exports = {
+//     calculateCube,
+//     isAVowel,
+//     getTwoLengths,
+//     sumArray,
+//     checkPrime,
+//     printPrimes,
+//     printLongestWord,
+//     eulerFibo,
+//     findNeedle,
+//     sumPositive
+// };
