@@ -96,8 +96,15 @@ console.log(printLongestWord(['hello there', 'world', 'hi']));
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    if (num === 1) {
+        return [0, 1];
+    } else {
+        let fiboSeq = eulerFibo(num - 1);
+        fiboSeq.push(fiboSeq[fiboSeq.length - 1] + fiboSeq[fiboSeq.length - 2]);
+        return fiboSeq;
+    }      
 }
+console.log(eulerFibo(10))
 
 // 9. findNeedle
 function findNeedle(arr) {
