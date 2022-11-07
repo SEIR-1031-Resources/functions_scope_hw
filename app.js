@@ -133,9 +133,16 @@ function findNeedle(arr) {
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
+    let result = 0;
+    for(i=0;i<arr.length;i++) {
+        if(arr[i]>=0) {
+            result = result + arr[i]
+        }
+    }
+    return result
 }
 
-console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
+console.log(sumPositive([1, -4, 7, 12]));
 
 // module.exports = {
 //     calculateCube,
