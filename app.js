@@ -80,8 +80,17 @@ console.log(printPrimes(80))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let max = arr[0].length;
+    let longest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        let maxLength = arr[i].length;
+        if (maxLength > max) {
+            longest = arr[i];
+            max = maxLength;
+        }
+    } return longest;
 }
+console.log(printLongestWord(['hello there', 'world', 'hi']));
 
 // BONUS!
 
