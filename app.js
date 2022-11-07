@@ -58,8 +58,25 @@ console.log(checkPrime(71))
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    let arr = [], limit = Math.floor(Math.sqrt(num)), output = [];
+    for (let i = 0; i < num; i++) {
+        arr.push(true);
+    }
+    for ( let i = 2; i<= limit; i++) {
+        if (arr[i]) {
+            for (let j = i * i; j < num; j += i){
+                arr[j] = false;
+            }
+        }
+    }
+    for (let i = 2; i < num; i++) {
+        if(arr[i]) {
+            output.push(i);
+        }
+    }
+    return output;
 }
+console.log(printPrimes(80))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
