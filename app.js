@@ -65,7 +65,7 @@ function checkPrime(num) {
                     break;
                 }
             }
-            return isPrime;
+            return isPrime
     }
 }
 //console.log(checkPrime(7));
@@ -77,15 +77,16 @@ function printPrimes(num) {
     let count = 0;
     let primeNumber = 0;
     for (i = 0; i <= num; i++){
-        if (checkPrime(primeNumber) === true) {
-            primeArray[count] = primeNumber;
+        if (checkPrime(primeNumber) === true) {   
+            //primeArray[count] = primeNumber;
+            console.log(primeNumber)
             count++;
         }
         primeNumber++;
     }
-        return primeArray
+        return primeArray;
 }
-// console.log(printPrimes(3433));
+//console.log(printPrimes(9));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
@@ -110,36 +111,26 @@ return biggestWord
 
 // BONUS!
 
-// 8. eulerFibo
-function eulerFibo(num) {
-const arr = [1];
-let currentNum = 1;
-let previousNum = 0;
-let totalEven = 0;
-    if ( num <=1){
-        return 0
-    } 
-    while (num > 0){
-        currentNum += previousNum;
-        previousNum = currentNum - previousNum;
-        if (currentNum % 2 === 0){
-        arr.push(currentNum);
-        }
-        num -= 1;
-    }
-    for (i = 2; i <= arr.length; i++){
-        totalEven = totalEven + arr[(i-1)];
-    }
-    if (totalEven <= 4000000){
-    return totalEven
-    }else 
-        return (`The number is too high - (${totalEven})`)
-    } 
+ function eulerFibo(num) {
+const arr =[];
+ let sum = 0;
+ let temp = 0;
+ let currentNum = 0;
+ let previousNum = 1;
+ while (previousNum < num) {
+     if (previousNum % 2 === 0) {
+            arr.push(previousNum);
+            console.log(arr)
+         sum += previousNum;
+     };
+     temp = currentNum;
+     currentNum = previousNum;
+     previousNum += temp;
+};
+return sum
+}
 
-//console.log(eulerFibo(31));
-
-// ***** The answer is 31 **** //
-
+console.log(eulerFibo(100));
 
 // 9. findNeedle
 function findNeedle(arr) {
