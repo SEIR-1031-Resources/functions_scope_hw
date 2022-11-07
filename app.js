@@ -123,6 +123,11 @@ function eulerFibo(num) {
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
+    for(i=0;i<arr.length;i++) {
+        if(arr[i] === "needle") {
+            return `found the needle at postition ${i}`
+        }
+    }
 }
 
 // 10. sumPositive
@@ -130,7 +135,7 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(eulerFibo(4000000));
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
 
 // module.exports = {
 //     calculateCube,
