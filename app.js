@@ -1,61 +1,140 @@
 // 1.1. What is the difference between a parameter and an argument?
 
+    //Parameters are placeholders for inputs of a function, and are assigned at the top of a function.
+    //Arguments are the values assigned when the function is called.
+
 // 1.2. Within a function, what is the difference between return and console.log?
+
+    //'console.log' prints a value into the console, while 'return' sends a value to where the function is called.
+    //'console.log' is mainly for debugging.
 
 // 1. 3. What are the implications of the ability of a function to return a value?
 
+    //'return' gives back a value from the function that can be used in the code.
+
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return num * num * num
 }
+console.log('\n2.')
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    return "aeiou".indexOf(letter) != -1;
 }
+console.log('\n3.')
+console.log(isAVowel('y'));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let word1length = word1.length;
+    let word2length = word2.length;
+    return [word1length, word2length]
 }
+console.log('\n4.')
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let sum = null;
+    for (let i = 0; i<arr.length; i++) {
+        sum += arr[i];
+    } return sum;
 }
+console.log('\n5.')
+console.log(sumArray([5, 2, 5]))
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+        let sqRoot = Math.floor(Math.sqrt(num));
+        for (let i = 2;  i <= sqRoot; i++) {
+        if (num % i === 0) {
+          return false;  
+        } 
+    } return true;
 }
+console.log('\n6.1')
+console.log(checkPrime(6))
+console.log(checkPrime(23))
+console.log(checkPrime(75))
+console.log(checkPrime(71))
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    let arr = [], limit = Math.floor(Math.sqrt(num)), output = [];
+    for (let i = 0; i < num; i++) {
+        arr.push(true);
+    }
+    for ( let i = 2; i<= limit; i++) {
+        if (arr[i]) {
+            for (let j = i * i; j < num; j += i){
+                arr[j] = false;
+            }
+        }
+    }
+    for (let i = 2; i < num; i++) {
+        if(arr[i]) {
+            output.push(i);
+        }
+    }
+    return output;
 }
+console.log('\n6.2')
+console.log(printPrimes(80))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let max = arr[0].length;
+    let longest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        let maxLength = arr[i].length;
+        if (maxLength > max) {
+            longest = arr[i];
+            max = maxLength;
+        }
+    } return longest;
 }
-
+console.log('\n7.')
+console.log(printLongestWord(['hello there', 'world', 'hi']))
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    //if number entered is 1, function won't work because of negative number
+    if (num === 1) {
+        return [0, 1];
+    } else {
+        let fiboSeq = eulerFibo(num - 1);
+        fiboSeq.push(fiboSeq[fiboSeq.length - 1] + fiboSeq[fiboSeq.length - 2]);
+        return fiboSeq;
+    }      
 }
+console.log('\n8.')
+console.log(eulerFibo(10))
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    if (arr.indexOf('needle') > -1) {
+        return `found the needle at position ${arr.indexOf('needle')}`
+    } else {
+        return 'no needle found'
+    }
 }
+console.log('\n9.')
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
 // 10. sumPositive
 function sumPositive(arr) {
-    // YOUR CODE HERE
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+        sum += arr[i];
+        }
+    }   return sum;
 }
-
+console.log('\n10.')
+console.log(sumPositive([-5, 1, 2, 3, 4]))
 module.exports = {
     calculateCube,
     isAVowel,
