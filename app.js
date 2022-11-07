@@ -82,25 +82,35 @@
 // "Commit 6 - Prime Numbers"
 
 // 7. printLongestWord
-    const printLongestWord=(arr) =>{
-    let longest=""; 
-    for (let i = 0; i < arr.length; i++) {
-        if(arr[i].length>longest.length){
-        longest=arr[i];
-    }
-}
-        return longest;
-    }
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
-// BONUS!
-"Commit 7 - Longest Word"
+//     const printLongestWord=(arr) =>{
+//     let longest=""; 
+//     for (let i = 0; i < arr.length; i++) {
+//         if(arr[i].length>longest.length){
+//         longest=arr[i];
+//     }
+// }
+//         return longest;
+//     }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// // BONUS!
+// "Commit 7 - Longest Word"
 
 // BONUS!
 
 // 8. eulerFibo
-function eulerFibo(num) {
-    // YOUR CODE HERE
-}
+     function eulerFibo(num){
+        addArr=[1,2]
+        for (let i = 2; i < num; i++) {
+            addArr[i]=addArr[i-1]+addArr[i-2]
+            while(addArr[i]<=num){
+                console.log(addArr[i])
+                break
+             }
+             }
+    }
+           console.log(eulerFibo(46));
+        
+"Commit 8 - Euler Problem"
 
 // 9. findNeedle
 function findNeedle(arr) {
