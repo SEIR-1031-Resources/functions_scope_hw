@@ -30,18 +30,25 @@
 
 // 4. getTwoLengths
     //function getTwoLengths(word1, word2) {
-    let getTwoLengths= (word1, word2) => {
-     return [word1.length, word2.length];
-    }
+//     let getTwoLengths= (word1, word2) => {
+//      return [word1.length, word2.length];
+//     }
     
-console.log(getTwoLengths("Hank","Hippopopalous"))
-"Commit 4 - Two Length"
+// console.log(getTwoLengths("Hank","Hippopopalous"))
+// "Commit 4 - Two Length"
 
 
 // 5. sumArray
-function sumArray(arr) {
-    // YOUR CODE HERE
-}
+    function sumArray(arr) {
+    let sum=0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+        return sum;
+    }
+    console.log(sumArray([1,2,3,4,5,6]));
+    "commit 5 - Sum Array"
+
 
 // 6.1 checkPrime
 function checkPrime(num) {
