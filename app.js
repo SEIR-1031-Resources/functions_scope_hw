@@ -46,11 +46,36 @@ function sumArray(arr) {
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    let result = true;
+    for(i=2;i<=Math.sqrt(num);i++) {
+        if(num%i === 0) {
+            result = false;
+            break;
+        }
+    }
+    return result
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+    let primes = [];
+    for(i=2;i<=num;i++) {
+        let primeCheck;
+        for(j=2;j<=Math.sqrt(i);j++) {
+            if(i%j === 0) {
+                primeCheck = false;
+                break;
+            }
+            else {
+                primeCheck = true;
+            }
+        }
+        if(primeCheck) {
+            primes.push(i);
+        }
+    }
+    return primes
 }
 
 // 7. printLongestWord
@@ -75,7 +100,9 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+console.log(checkPrime(73));
+console.log(checkPrime(77));
+console.log(printPrimes(97));
 
 /*
 module.exports = {
