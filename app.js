@@ -113,21 +113,26 @@
 // "Commit 8 - Euler Problem"
 
 // 9. findNeedle
-     function findNeedle(arr) {
-             for (let i = 0; i < arr.length; i++) {
-                 if(arr[i]==="needle"){
-                 return "found the needle at position " + i
-         }
-             }
-         }
-        console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
-        "Commit 9 - Needle"
+    //  function findNeedle(arr) {
+    //          for (let i = 0; i < arr.length; i++) {
+    //              if(arr[i]==="needle"){
+    //              return "found the needle at position " + i
+    //      }
+    //          }
+    //      }
+    //     console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
+    //     "Commit 9 - Needle"
 
 
 // 10. sumPositive
-function sumPositive(arr) {
-    // YOUR CODE HERE
+    function sumPositive(arr) {
+    let sum=0;
+    arr.forEach(num => num > 0 && (sum += num))
+    return sum
 }
+console.log(sumPositive([1, -4, 7, 12]));
+"Commit 10 - Sum the Postive"
+
 
 // module.exports = {
 //     calculateCube,
