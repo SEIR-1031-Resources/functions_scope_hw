@@ -16,22 +16,27 @@
 
 
 // 3. isAVowel
-let isAVowel= function(letter){
-    const vowel= ['a','e','i','o','u'];
-    for (let i = 0; i < vowel.length; i++) {
-    if (vowel[i]=== letter.toLowerCase()){
-        return true;
-    } 
-}
-        return false;
-}
-console.log(isAVowel("a"));
-"Commit 3 - is a Vowel"
+// let isAVowel= function(letter){
+//     const vowel= ['a','e','i','o','u'];
+//     for (let i = 0; i < vowel.length; i++) {
+//     if (vowel[i]=== letter.toLowerCase()){
+//         return true;
+//     } 
+// }
+//         return false;
+// }
+// console.log(isAVowel("a"));
+// "Commit 3 - is a Vowel"
 
 // 4. getTwoLengths
-function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
-}
+    //function getTwoLengths(word1, word2) {
+    let getTwoLengths= (word1, word2) => {
+     return [word1.length, word2.length];
+    }
+    
+console.log(getTwoLengths("Hank","Hippopopalous"))
+"Commit 4 - Two Length"
+
 
 // 5. sumArray
 function sumArray(arr) {
