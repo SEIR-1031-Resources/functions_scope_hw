@@ -23,12 +23,15 @@ function isAVowel(letter) {
     return "aeiou".indexOf(letter) != -1;
 }
 console.log(isAVowel('y'));
-console.log(isAVowel('o'))
+console.log(isAVowel('o'));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let word1length = word1.length;
+    let word2length = word2.length;
+    return [word1length, word2length]
 }
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
