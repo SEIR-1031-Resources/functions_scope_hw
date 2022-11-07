@@ -98,24 +98,31 @@
 // BONUS!
 
 // 8. eulerFibo
-     function eulerFibo(num){
-        addArr=[1,2]
-        for (let i = 2; i < num; i++) {
-            addArr[i]=addArr[i-1]+addArr[i-2]
-            while(addArr[i]<=num){
-                console.log(addArr[i])
-                break
-             }
-             }
-    }
-           console.log(eulerFibo(46));
+//      function eulerFibo(num){
+//         addArr=[1,2]
+//         for (let i = 2; i < num; i++) {
+//             addArr[i]=addArr[i-1]+addArr[i-2]
+//             while(addArr[i]<=num){
+//                 console.log(addArr[i])
+//                 break
+//              }
+//              }
+//     }
+//            console.log(eulerFibo(46));
         
-"Commit 8 - Euler Problem"
+// "Commit 8 - Euler Problem"
 
 // 9. findNeedle
-function findNeedle(arr) {
-    // YOUR CODE HERE
-}
+     function findNeedle(arr) {
+             for (let i = 0; i < arr.length; i++) {
+                 if(arr[i]==="needle"){
+                 return "found the needle at position " + i
+         }
+             }
+         }
+        console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));
+        "Commit 9 - Needle"
+
 
 // 10. sumPositive
 function sumPositive(arr) {
