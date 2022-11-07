@@ -44,8 +44,17 @@ console.log(sumArray([5, 2, 5]))
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    let sqRoot = Math.floor(Math.sqrt(num));
+    for (let i = 2;  i <= sqRoot; i++) {
+    if (num % i === 0) {
+      return false;  
+    } 
+} return true;
 }
+console.log(checkPrime(6))
+console.log(checkPrime(23))
+console.log(checkPrime(75))
+console.log(checkPrime(71))
 
 // 6.2 printPrimes
 function printPrimes(num) {
