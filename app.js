@@ -20,8 +20,10 @@ console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    return "aeiou".indexOf(letter) != -1;
 }
+console.log(isAVowel('y'));
+console.log(isAVowel('o'))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
