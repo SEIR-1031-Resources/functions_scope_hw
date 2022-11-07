@@ -95,6 +95,29 @@ function printLongestWord(arr) {
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
+    let results = [];
+    let evenResults = [];
+    let evenSum = 0;
+    let current = 0;
+    let next = 1;
+    let sum = 0;
+    while(current+next <= num) {
+        sum = current + next;
+        console.log(sum)
+        results.push(sum);
+        current = next;
+        next = sum;
+    }
+    for(i=0;i<results.length;i++) {
+        if(results[i]%2 === 0) {
+            evenResults.push(results[i])
+        }
+    }
+    console.log(evenResults)
+    for(j=0;j<evenResults.length;j++) {
+        evenSum += evenResults[j]
+    }
+    return evenSum
 }
 
 // 9. findNeedle
@@ -107,19 +130,17 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+console.log(eulerFibo(4000000));
 
-/*
-module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
-*/
+// module.exports = {
+//     calculateCube,
+//     isAVowel,
+//     getTwoLengths,
+//     sumArray,
+//     checkPrime,
+//     printPrimes,
+//     printLongestWord,
+//     eulerFibo,
+//     findNeedle,
+//     sumPositive
+// };
