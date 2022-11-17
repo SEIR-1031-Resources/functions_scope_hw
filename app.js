@@ -1,14 +1,14 @@
 // 1.1. What is the difference between a parameter and an argument?
+//  a parameter is used when writing the function and an argument is used when invoking the function.
+// 1.2. Within a function, what is the difference between return and console.log? return will return the value the function gives while console.log will write what is happening in the console.
 
-// 1.2. Within a function, what is the difference between return and console.log?
-
-// 1. 3. What are the implications of the ability of a function to return a value?
+// 1. 3. What are the implications of the ability of a function to return a value? 
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return Math.pow(num, 3)
 }
-
+console.log(calculateCube(5))
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
