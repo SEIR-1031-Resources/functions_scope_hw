@@ -11,12 +11,20 @@ function calculateCube(num) {
 console.log(calculateCube(5))
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    if(letter.toLowerCase() === "a" || letter.toLowerCase() === "e"){
+        return true;
+    }else if (letter.toLowerCase()=== "i" || letter.toLowerCase() === "o"){
+        return true;
+    }else if(letter.toLowerCase() ==="u"){
+        return true;
+    }else{
+        return "Not a Vowel"
+    }
 }
-
+console.log(isAVowel("b"))
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    
 }
 
 // 5. sumArray
@@ -56,15 +64,15 @@ function sumPositive(arr) {
     // YOUR CODE HERE
 }
 
-module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
+// module.exports = {
+//     calculateCube,
+//     isAVowel,
+//     getTwoLengths,
+//     sumArray,
+//     checkPrime,
+//     printPrimes,
+//     printLongestWord,
+//     eulerFibo,
+//     findNeedle,
+//     sumPositive
+// };
