@@ -24,9 +24,10 @@ function isAVowel(letter) {
 console.log(isAVowel("b"))
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    
+    let answer = [word1.length, word2.length]
+    return answer
 }
-
+console.log(getTwoLengths("Hank","Hippopopalous"))
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
