@@ -8,7 +8,7 @@
 // function calculateCube(num) {
 //     return Math.pow(num, 3)
 // }
-// console.log(calculateCube(5))
+// console.log(calculateCube(35))
 // 3. isAVowel
 // function isAVowel(letter) {
 //     if(letter.toLowerCase() === "a" || letter.toLowerCase() === "e"){
@@ -30,25 +30,37 @@
 // console.log(getTwoLengths("Hank","Hippopopalous"))
 // 5. sumArray
 
-function sumArray(arr) {
-     let sum = 0
-     for(let i = 0; i < arr.length; i++){
-        sum = sum + arr[i]
-    }
-    return sum
-    };
+// function sumArray(arr) {
+//      let sum = 0
+//      for(let i = 0; i < arr.length; i++){
+//         sum = sum + arr[i]
+//     }
+//     return sum
+//     };
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]))
+// console.log(sumArray([1, 2, 3, 4, 5, 6]))
 // 6.1 checkPrime
-function checkPrime(num) {
-    
-}
+// let isItPrime;
+// function checkPrime(num){
+//     for(let i = 2; i<= Math.sqrt(num); i++){
+//         if(num % i === 0){
+//             isItPrime = false;
+//         }else{
+//             isItPrime = true;
+//         }
+//         };   
+//         return isItPrime
+//     };
 
-// 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
-}
-
+// // 6.2 printPrimes
+// function printPrimes(num) {
+//     for(let i=0;i<=num;i++){
+//         if(checkPrime(i) === true){
+//             console.log(i)
+//         };
+//     };
+// };
+// printPrimes(97)
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
