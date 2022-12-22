@@ -1,8 +1,11 @@
 // 1.1. What is the difference between a parameter and an argument?
+// 
 //  a parameter is used when writing the function and an argument is used when invoking the function.
-// 1.2. Within a function, what is the difference between return and console.log? return will return the value the function gives while console.log will write what is happening in the console.
+// 1.2. Within a function, what is the difference between return and console.log? 
+// return will return the value the function gives while console.log will write what is happening in the console.
 
-// 1. 3. What are the implications of the ability of a function to return a value? a return stops the function and returns what the function was intended to do.
+// 1. 3. What are the implications of the ability of a function to return a value? 
+// a return stops the function and returns what the function was intended to do.
 
 // 2. calculateCube
 // function calculateCube(num) {
@@ -42,7 +45,7 @@
 // 6.1 checkPrime
 // let isItPrime;
 // function checkPrime(num){
-//     for(let i = 2; i<= Math.sqrt(num); i++){
+//     for(let i = 2; i<= Math.floor(Math.sqrt(num)); i++){
 //         if(num % i === 0){
 //             isItPrime = false;
 //         }else{
@@ -51,7 +54,7 @@
 //         };   
 //         return isItPrime
 //     };
-
+// console.log(checkPrime(3))
 // // 6.2 printPrimes
 // function printPrimes(num) {
 //     for(let i=0;i<=num;i++){
@@ -62,18 +65,18 @@
 // };
 // printPrimes(97)
 // 7. printLongestWord
-function printLongestWord(arr) {
-    let word;
-    for(let i=0;i<arr.length;i++){
-        if(arr[i].length > i){
-            word = arr[i]
-        }else if(word.length == arr[i].length){
-            word = word
-        }
-    }
-    return word
-}
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// function printLongestWord(arr) {
+//     let word;
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i].length > i){
+//             word = arr[i]
+//         }else if(word.length == arr[i].length){
+//             word = word
+//         }
+//     }
+//     return word
+// }
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 // BONUS!
 
 // 8. eulerFibo
